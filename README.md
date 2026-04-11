@@ -36,11 +36,18 @@ Profit Margin = DIVIDE([Total Profit], [Total Sales], 0)
 
 // Order Volume
 Total Orders = DISTINCTCOUNT('Fact_Sales'[SalesOrderLineKey])
-## 📈 Key Business Insights
-Through data visualization and cross-filtering, several critical insights were uncovered:
-1. **Product Profitability Alert:** The `Jerseys` subcategory is currently generating a negative profit (**-$0.01M**), despite having steady sales volume. This indicates a need to review pricing strategies or manufacturing costs for this specific line.
-2. **Market Dominance:** The **United States** is the leading market by a significant margin ($5.3M), followed by Australia ($4.1M). 
-3. **Channel Mix:** The Reseller channel drives the majority of the total revenue (~69.86%). However, comparing Profit Margins across channels provides a deeper understanding of actual operational efficiency.
+
+## 📈 Key Business Insights & Recommendations
+Through analyzing the multi-year dataset (FY2018 - FY2021) and utilizing cross-filtering interactions, several critical business insights emerged:
+
+1. **Consistent YoY Revenue Growth & Seasonal Peaks:** * **Observation:** The company experienced strong Year-over-Year (YoY) growth, with Total Sales nearly doubling from $23.86M in FY2018 to $43.43M in FY2020. *(Note: FY2021 data is currently incomplete).* Sales consistently peak around the Nov-Dec holiday season and mid-year (May-Jun).
+   * **Recommendation:** Supply chain and inventory planning teams should pre-allocate stock 1-2 months ahead of these historical peaks to prevent stockouts and maximize holiday revenue.
+
+2. **The "Pareto Principle" in Product Profitability:** * **Observation:** The core business relies heavily on the "Bikes" category. Mountain Bikes and Road Bikes are the absolute cash cows, generating over $11M in all-time profit. Conversely, apparel subcategories like `Jerseys` and `Caps` frequently record negative margins (e.g., -$0.01M).
+   * **Recommendation:** The Product team must investigate the supply chain costs of the apparel lines. Consider implementing a "cross-selling" strategy (bundling loss-making jerseys with high-margin bikes) or discontinuing unprofitable lines entirely.
+
+3. **B2B Channel Dominance vs. B2C Potential:** * **Observation:** The wholesale/B2B channel (`Reseller`) is the structural backbone of the business, consistently driving around 70-74% of the total revenue every year. However, in the Direct-to-Consumer (`Internet`) segment, the United States completely overshadows other regions.
+   * **Recommendation:** While maintaining strong Reseller relationships is critical for cash flow, the Marketing team should investigate why Internet sales are lagging in European markets (Germany, France) and deploy localized online campaigns to capture B2C market share there.
 
 ## 📂 Repository Contents
 * `AdventureWorks Sales.pbix` : The main Power BI project file.
