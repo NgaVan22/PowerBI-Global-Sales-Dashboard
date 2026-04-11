@@ -36,3 +36,16 @@ Profit Margin = DIVIDE([Total Profit], [Total Sales], 0)
 
 // Order Volume
 Total Orders = DISTINCTCOUNT('Fact_Sales'[SalesOrderLineKey])
+## 📈 Key Business Insights
+Through data visualization and cross-filtering, several critical insights were uncovered:
+1. **Product Profitability Alert:** The `Jerseys` subcategory is currently generating a negative profit (**-$0.01M**), despite having steady sales volume. This indicates a need to review pricing strategies or manufacturing costs for this specific line.
+2. **Market Dominance:** The **United States** is the leading market by a significant margin ($5.3M), followed by Australia ($4.1M). 
+3. **Channel Mix:** The Reseller channel drives the majority of the total revenue (~69.86%). However, comparing Profit Margins across channels provides a deeper understanding of actual operational efficiency.
+
+## 📂 Repository Contents
+* `AdventureWorks Sales.pbix` : The main Power BI project file.
+* `AdventureWorks Sales.pdf` : A high-quality PDF export of the dashboard for quick viewing.
+
+## 🚀 How to View
+1. **Quick View:** Open the `.pdf` file to see the final layout.
+2. **Interactive View:** Download the `.pbix` file and open it with Power BI Desktop to interact with the slicers and cross-filtering features.
