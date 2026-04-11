@@ -36,8 +36,7 @@ Profit Margin = DIVIDE([Total Profit], [Total Sales], 0)
 
 // Order Volume
 Total Orders = DISTINCTCOUNT('Fact_Sales'[SalesOrderLineKey])
-
-
+```
 ## 📈 Key Business Insights & Recommendations
 Through analyzing the multi-year dataset (FY2018 - FY2021) and utilizing cross-filtering interactions, several critical business insights emerged:
 
