@@ -5,7 +5,7 @@
 
 ##  Project Overview
 This project is an interactive **Executive Sales Dashboard** built in Power BI, designed to provide high-level visibility into global sales performance, channel effectiveness, and product profitability. The objective is to transform raw transactional data into actionable business insights for stakeholders to optimize sales strategies.
-## 🛠️ Tech Stack & Tools
+## Tech Stack & Tools
 * **BI Tool:** Power BI Desktop
 * **Data Transformation:** Power Query
 * **Data Modeling:** Star Schema design
